@@ -1,0 +1,88 @@
+/* AccountInfo.css */
+.account-info-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .account-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .sign-out-button,
+  .saveChangesButton,
+  .sign-in-button,
+  .create-account-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover,
+  .create-account-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .sign-in-form,
+  .create-account-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Corrected property */
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  /* Additional styling for buttons if needed */
+  .button-container button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #2980b9;
+  }
+  @media screen and (max-width: 600px) {
+    .account-options {
+      flex-direction: column;
+    }
+  }
+
+  .favorites {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .favoritesTable {
+    padding-bottom: 30px;
+    cursor: pointer;
+  }

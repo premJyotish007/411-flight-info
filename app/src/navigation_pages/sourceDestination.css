@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .autocomplete {
+    width: 500px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .collapsible {
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  .sliderDeptTime {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+    
+  }
+  /* Add styles for the Accordion */
+
+  .accordions {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .airport-accordion {
+    width: 75%; /* Set the width to 100% to take the full width of the container */
+    text-align: left; /* Align the content to the left */
+    
+  }
+  
+  /* Styles for AccordionSummary */
+  .airport-accordion-summary {
+    background-color: #f0f0f0; /* Set a background color */
+  }
+  
+  /* Styles for AccordionDetails */
+  .airport-accordion-details {
+    padding: 16px; /* Add padding to the details */
+  }

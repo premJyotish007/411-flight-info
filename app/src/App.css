@@ -1,0 +1,23 @@
+.Container {
+  display: flex;
+  
+}
+
+.NavigationMenu {
+  padding-top: 50px;
+  /* background: url('sky.jpg'); */
+  background-color: #1d1d1d;
+  flex: 0 0 auto; /* Do not grow or shrink */
+}
+
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  flex-grow: 1; /* Grow to take available space */
+  padding: 20px; /* Adjust padding as needed */
+  background: url('sky.jpg') no-repeat center center fixed;
+  background-size: cover;
+  
+  
+}

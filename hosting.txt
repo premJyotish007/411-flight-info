@@ -1,0 +1,26 @@
+gcloud components install
+
+gcloud init
+
+"scripts": {
+  "start": "node app.js"
+}
+
+FROM node:14
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 8080
+
+CMD [ "npm", "start" ]
+
+
+gcloud builds submit --tag gcr.io/[PROJECT_ID]/[IMAGE_NAME]
+
+gcloud run deploy --image gcr.io/[PROJECT_ID]/[IMAGE_NAME]

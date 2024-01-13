@@ -1,0 +1,15 @@
+1. for a given route - SRC_AIRPORT - DESTINATION_AIRPORT: 
+    - possible routes (airline + flight_number): direct + one-stop layover
+    - puncutality of every airline on that route
+    - particular flights that were delayed
+    - the number of flights that were cancelled
+    - the number of flights that were diverted
+    - best times to fly that route (day of the week / month, etc.)
+
+2. for a given airline - AIRLINE:
+    - puncutality of the airline (cancelled, delayed, etc.)
+    - hub airport(s) of that airline
+
+3. for a given airport:
+    - taxi times relative to flight take off and landing frequency.
+    - punctuality of the airport, i.e. based on flights taking off and landing delays for that airport.

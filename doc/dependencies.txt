@@ -1,0 +1,67 @@
+FLIGHTS
+
+DATE - concat(YEAR, MONTH, DAY) - A
+DAY_OF_WEEK - B
+AIRLINE - C
+FLIGHT_NUMBER - D
+ORIGIN_AIRPORT - E
+DESTINATION_AIRPORT - F
+SCHEDULED_DEPARTURE - G
+DEPARTURE_DELAY - H
+DEPARTURE_TIME - I
+TAXI_OUT - J
+ELAPSED_TIME - K
+AIR_TIME - L
+SCHEDULED_ARRIVAL - M
+ARRIVAL_DELAY - N
+ARRIVAL_TIME - O
+TAXI_IN - P
+WHEELS_OFF - Q
+WHEELS_ON - R
+CANCELLED - S
+
+
+
+Non reduced table:
+
+Z(A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S)
+
+
+3nf form:
+
+ACDGS - BHIJLMPQNREF
+
+Our primary key in the table gives us all the columns, since airline + flight_number (i.e. flight route), date, scheduled departure time, and cancellation status are all determiners of unique flights
+
+We can create new tables for some information to quickly extract.
+
+Candidate key: ACDGS+
+
+
+AIRPORTS
+
+IATA_CODE - A
+AIRPORT - B
+CITY_STATE (CITY, STATE) - C
+COORDINATES (LATITUDE , LONGITUDE) - D
+
+Non reduced table:
+
+Z(A, B, C, D)
+
+A -> BCD
+D -> C
+D -> B
+
+Candidate key: A+
+
+AIRLINES
+
+IATA_CODE - A
+AIRLINE - B
+
+A -> B
+
+Candidate key: A+
+
+For cancellation, we need the cancellation id and the Unique_flight to uniquely determine all the entries in the cancelation table.

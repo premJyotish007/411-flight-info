@@ -1,0 +1,67 @@
+mysql> emailmsubbu@cloudshell:~ (test-project-402123)$ gcloud sql connect cs-411-test-db --user=root
+Allowlisting your IP for incoming connection for 5 minutes...done.                                                                                                                                                                                               
+Connecting to database with SQL user [root].Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2583
+Server version: 8.0.31-google (Google)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| airlines           |
+| airpo              |
+| classicmodels      |
+| flights            |
+| gh                 |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+9 rows in set (0.06 sec)
+
+mysql> use flights;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_flights  |
++--------------------+
+| airlines           |
+| airports           |
+| apr                |
+| apr_key            |
+| cancel             |
+| departures         |
+| favorites          |
+| feb                |
+| feb_key            |
+| flight_copy        |
+| flight_copy_2      |
+| flights            |
+| jan                |
+| jan_key            |
+| mar                |
+| mar_key            |
+| may                |
+| red_flights        |
+| red_flights_copy1  |
+| red_flights_copy2  |
+| routeDeptAirport   |
+| routeOriginAirport |
+| userLogin          |
++--------------------+
+23 rows in set (0.01 sec)
+
+mysql>

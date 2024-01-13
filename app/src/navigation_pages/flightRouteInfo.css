@@ -1,0 +1,37 @@
+.flight-route-info-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+    align-items: center; /* Center align the content */
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Add some space between the input fields */
+  .input-container .MuiTextField-root {
+    margin-right: 30px;
+  }
+  
+.display-box {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: space-around;
+  
+}
+
+
+.sourceDisplay, .destinationDisplay {
+  display: flex;
+  flex-direction: row;
+}
